@@ -63,6 +63,7 @@ To install tmux-config:
 ```
 $ git clone https://github.com/le91/tmux.git
 $ chmod a+x ./tmux/install.sh
+$ $TMUX_UPDATE_CONFIG ='wget -q https://raw.githubusercontent.com/le91/tmux/master/tmux/tmux.conf -O ~/.tmux/tmux.conf'; export TMUX_UPDATE_CONFIG
 $ ./tmux/install.sh
 ```
 
