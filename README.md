@@ -62,6 +62,7 @@ On OSX you can install latest 2.6 version with `brew install tmux`. On Linux it'
 To install tmux-config:
 ```
 $ git clone https://github.com/le91/tmux.git
+$ chmod a+x ./tmux/install.sh
 $ ./tmux/install.sh
 ```
 
