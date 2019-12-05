@@ -63,7 +63,6 @@ To install tmux-config:
 ```
 git clone https://github.com/le91/tmux.git
 chmod a+x ./tmux/install.sh
-$TMUX_UPDATE_CONFIG ='wget -q https://raw.githubusercontent.com/le91/tmux/master/tmux/tmux.conf -O ~/.tmux/tmux.conf'; export TMUX_UPDATE_CONFIG
 ./tmux/install.sh
 ```
 
@@ -73,12 +72,18 @@ $TMUX_UPDATE_CONFIG ='wget -q https://raw.githubusercontent.com/le91/tmux/master
 - [Tmux Plugin Manager](https://github.com/tmux-plugins/tpm) will be installed at default location `~/.tmux/plugins/tpm`, unless already presemt
 - required tmux plugins will be installed
 
-Finally, you can jump into a new tmux session:
+Congratulation, you install, can jump into a new tmux session:
 
 ```
 tmux new
 ```
 
+And Finally, manual update tmux.conf file
+
+```
+$ wget -q https://raw.githubusercontent.com/le91/tmux/master/tmux/tmux.conf -O ~/.tmux/tmux.conf
+$ curl -OL https://raw.githubusercontent.com/le91/tmux/master/tmux/tmux.conf > tmux.conf && mv tmux.conf ~/.tmux/tmux.conf
+```
 
 General settings
 ----------------
