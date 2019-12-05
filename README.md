@@ -1,4 +1,4 @@
-Tmux Configuration
+Tmux Configuration based on https://github.com/samoshkin/tmux-config/
 =====================
 Tmux configuration, that supercharges your [tmux](https://tmux.github.io/) and builds cozy and cool terminal environment.
 
