@@ -52,11 +52,11 @@ Installation
 -------------
 Prerequisites:
 - tmux >= "v2.4"
-- OSX, Linux (tested on Ubuntu 14 and CentOS7), FreeBSD (tested on 11.1)
+- OSX, Linux (tested on Ubuntu 14-18 and CentOS6-8)
 
-Personally, I use it on OSX 10.11.5 El Capitan through iTerm2.
+Personally, I use it on RHEL8 xterm-256color.
 
-On OSX you can install latest 2.6 version with `brew install tmux`. On Linux it's better to install from source, because official repositories usually contain outdated version. For example, CentOS7 - v1.8 from base repo, Ubuntu 14 - v1.8 from trusty/main. For how to install from source, see this [gist](https://gist.github.com/P7h/91e14096374075f5316e) or just google it.
+Note: On OSX you can install latest 2.6 version with `brew install tmux`. On Linux it's better to install from source, because official repositories usually contain outdated version. For example, CentOS7 - v1.8 from base repo, Ubuntu 14 - v1.8 from trusty/main. For how to install from source, see this [gist](https://gist.github.com/P7h/91e14096374075f5316e) or just google it.
 
 
 To install tmux-config:
