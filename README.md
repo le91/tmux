@@ -61,10 +61,10 @@ On OSX you can install latest 2.6 version with `brew install tmux`. On Linux it'
 
 To install tmux-config:
 ```
-$ git clone https://github.com/le91/tmux.git
-$ chmod a+x ./tmux/install.sh
-$ $TMUX_UPDATE_CONFIG ='wget -q https://raw.githubusercontent.com/le91/tmux/master/tmux/tmux.conf -O ~/.tmux/tmux.conf'; export TMUX_UPDATE_CONFIG
-$ ./tmux/install.sh
+git clone https://github.com/le91/tmux.git
+chmod a+x ./tmux/install.sh
+$TMUX_UPDATE_CONFIG ='wget -q https://raw.githubusercontent.com/le91/tmux/master/tmux/tmux.conf -O ~/.tmux/tmux.conf'; export TMUX_UPDATE_CONFIG
+./tmux/install.sh
 ```
 
 `install.sh` script does following:
@@ -76,7 +76,7 @@ $ ./tmux/install.sh
 Finally, you can jump into a new tmux session:
 
 ```
-$ tmux new
+tmux new
 ```
 
 
@@ -88,12 +88,12 @@ Windows and pane indexing starts from `1` rather than `0`. Scrollback history li
 
 ```
 # parent terminal
-$ echo $TERM
+echo $TERM
 xterm-256color
 
 # jump into a tmux session
-$ tmux new
-$ echo $TERM
+tmux new
+echo $TERM
 screen-256color
 ```
 
