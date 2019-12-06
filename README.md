@@ -57,12 +57,10 @@ Prerequisites:
 =======
 - tmux >= "v2.4"
 - OSX, Linux (tested on Ubuntu 14-18 and CentOS6-8)
->>>>>>> 5188f2ed980b2f40acb563ea432c583ca33deca1
 
 Personally, I use it on RHEL8 xterm-256color.
 
 Note: On OSX you can install latest 2.6 version with `brew install tmux`. On Linux it's better to install from source, because official repositories usually contain outdated version. For example, CentOS7 - v1.8 from base repo, Ubuntu 14 - v1.8 from trusty/main. For how to install from source, see this [gist](https://gist.github.com/P7h/91e14096374075f5316e) or just google it.
-
 
 To install tmux-config:
 ```
