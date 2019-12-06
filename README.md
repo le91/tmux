@@ -84,8 +84,8 @@ tmux new
 And Finally, manual update tmux.conf file
 
 ```
-$ wget -q https://raw.githubusercontent.com/le91/tmux/master/tmux/tmux.conf -O ~/.tmux/tmux.conf
-$ curl -OL https://raw.githubusercontent.com/le91/tmux/master/tmux/tmux.conf > tmux.conf && mv tmux.conf ~/.tmux/tmux.conf
+$ wget -q https://raw.githubusercontent.com/le91/tmux/master/tmux/tmux.conf -O ~/.tmux/tmux.conf && tmux source-file ~/.tmux/tmux.conf
+$ curl -OL https://raw.githubusercontent.com/le91/tmux/master/tmux/tmux.conf > tmux.conf && mv tmux.conf ~/.tmux/tmux.conf && tmux source-file ~/.tmux/tmux.conf
 ```
 
 General settings
