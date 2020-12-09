@@ -88,6 +88,12 @@ And Finally, manual update tmux.conf file
 $ wget -q https://raw.githubusercontent.com/le91/tmux/master/tmux/tmux.conf -O ~/.tmux/tmux.conf && tmux source-file ~/.tmux/tmux.conf
 $ curl -OL https://raw.githubusercontent.com/le91/tmux/master/tmux/tmux.conf > tmux.conf && mv tmux.conf ~/.tmux/tmux.conf && tmux source-file ~/.tmux/tmux.conf
 ```
+UPD: 09.12.2020 Fast check config file
+```
+tmux kill-server & pkill -f tmux 
+wget -q $wgetohs/tmux.conf -O ~/.tmux.conf && tmux source-file ~/.tmux.conf 
+/home/oracle/run_tmux.sh
+```
 
 General settings
 ----------------
@@ -304,7 +310,7 @@ Status line
 
 I've started with Powerline as a status line, but then realized it's too fat for my Macbook 15'' display, it hardly can fit all those fancy arrows, widgets and separators, so that I can only see one window "tab".
 
-So I decide to make my feet wet, with the idea to keep it dense, and include essential widgets. Sometimes it tries to replicate OSX topbar (battery, date time).
+So I decide to make my feet wet, with the idea to keep it dense, and include essential widgets. Sometimes it tries to replicate OSX topbar (date time).
 
 Left part:
 ![status line left](https://user-images.githubusercontent.com/768858/33151594-59db6a8e-cfe1-11e7-8a36-476fe0b416b3.png)
@@ -321,7 +327,6 @@ The right part of status line consists of following components:
 - CPU, memory usage, system load average metrics. Powered by [tmux-plugin-sysstat](https://github.com/samoshkin/tmux-plugin-sysstat) (dislaimed, that's my own development, because I haven't managed to find any good plugin with CPU and memory/swap metrics)
 - username and hostname (invaluable when you SSH onto remote host)
 - current date time
-- battery information
 - visual indicator when you press prefix key: `[^A]`.
 - visual indicator when pane is zoomed: `[Z]`
 - online/offline visual indicator (just pings `google.com`)
