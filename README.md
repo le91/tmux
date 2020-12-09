@@ -91,7 +91,7 @@ $ curl -OL https://raw.githubusercontent.com/le91/tmux/master/tmux/tmux.conf > t
 UPD: 09.12.2020 Fast check config file
 ```
 tmux kill-server & pkill -f tmux 
-wget -q $wgetohs/tmux.conf -O ~/.tmux.conf && tmux source-file ~/.tmux.conf 
+wget -q $wgetohs/tmux.conf -O ~/.tmux/tmux.conff && tmux source-file ~/.tmux/tmux.conf
 /home/oracle/run_tmux.sh
 ```
 
