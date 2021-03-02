@@ -94,6 +94,15 @@ tmux kill-server & pkill -f tmux
 wget -q $wgetohs/tmux.conf -O ~/.tmux/tmux.conff && tmux source-file ~/.tmux/tmux.conf
 /home/oracle/run_tmux.sh
 ```
+UPD: 02.13.2021 Connect main-0 sessions
+```
+#!/bin/bash
+if tmux attach -t main-0; then
+    touch /home/oracle/run_tmux.sh
+else
+    tmux new-session -t main
+fi
+```
 
 General settings
 ----------------
